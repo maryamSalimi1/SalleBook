@@ -1,0 +1,14 @@
+# Fichiers générés par le système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichiers de log et de configuration locale
+*.log
+.env
+
+# Dossier des modules (si vous utilisez Node.js plus tard)
+node_modules/
+
+# Dossier de build ou temporaire
+dist/
+build/

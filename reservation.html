@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une salle - SalleBook</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>SalleBook</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="reservation.html">Réserver</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Formulaire de réservation</h1>
+            <p>Veuillez remplir le formulaire ci-dessous pour réserver votre espace.</p>
+            
+            <form onsubmit="confirmerSoumission(event)" style="margin-top: 1.5rem;">
+                <div style="margin-bottom: 1.2rem; text-align: left;">
+                    <label for="salle"><strong>Choisissez une salle :</strong></label><br>
+                    <select id="salle" name="salle" style="width: 100%; padding: 0.6rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="amphi-a">Amphithéâtre A (Capacité: 100 places)</option>
+                        <option value="salle-tp">Salle TP 1 (Capacité: 30 places)</option>
+                        <option value="salle-reunion">Salle de réunion (Capacité: 15 places)</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 1.2rem; text-align: left;">
+                    <label for="date"><strong>Date de réservation :</strong></label><br>
+                    <input type="date" id="date" name="date" required style="width: 100%; padding: 0.6rem; margin-top: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Confirmer la demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SalleBook - Université Mohammed V. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

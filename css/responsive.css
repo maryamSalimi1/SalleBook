@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Fichier : responsive.css
+   ========================================================================== */
+
+/* 1. TABLETTES ET ÉCRANS MOYENS (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Navigation principale */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Section Hero (Accueil) */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajustement des grilles et conteneurs */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* 2. SMARTPHONES ET PETITS ÉCRANS (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    
+    /* Réduction globale de la taille du texte pour les petits écrans */
+    body {
+        font-size: 14px;
+    }
+
+    /* En-tête / Navigation */
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+    }
+
+    /* Section Hero */
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Formulaire de réservation et de contact */
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    input, select, textarea {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+    
+    /* Pied de page */
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+}
